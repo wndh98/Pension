@@ -1,15 +1,32 @@
 *{margin:0;padding:0;box-sizing: border-box;font-family: "Pretendard-Regular";}
 a{text-decoration: none;}
 header{
+    width:100%;
     position:absolute;
     top:0;
     left:0;
     background-color: 
     #ffffff;
 }
+header .container{
+    height:120px;
+}
 header .container h1{
-    width:168px;
-    height:49px;
+    position:absolute;
+    width:200px;
+    height:43px;
     background-image: url("/images/reservation/logo-2.png");
-    
+    top: 50px;
+    left: 159px; 
+}
+
+header .container ul{
+    padding-right:190px;
+    display:flex;
+    justify-content: end;
+    height:100%;
+    padding-top:70px;
+    font-size:18px;
+    list-style-type:none;
+    font-weight: bold;
 }
