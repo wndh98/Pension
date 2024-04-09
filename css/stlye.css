@@ -1,4 +1,7 @@
-*body{
+*{
+    font-family: 'pretendard, sans-serif;';
+}
+body{
     margin: 0;
     box-sizing: border-box;
     max-width: 1000px;
@@ -8,26 +11,51 @@
 .container{
     position: relative;
     border: 1px solid red;
-    background-image: url(../image/suv-img.jpg);
+    background-image: url(../images/travel/suv-img.jpg);
     background-position: center;
-    background-size: cover;
+    object-fit: cover;
+    /* background-size: cover; */
     height: 1078px;
     width: 1920px;
     margin: 0 0 26px;
     padding: 0 0 18px;
+    
 }
 .container h1{ 
     width: 160px;
     height: 29px;
     margin: 225px 98px 17px 160px;
-    font-family: 'pretendard, sans-serif;';
+    font-family: 'Pretendard-Regular';
     font-size: 40px;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
-    letter-spacing: 2.4px;
+    letter-spacing: 10.2px;
     text-align: left;
     color: #fff;
-    
-
 }
+.sun{
+    
+        width: 279px;
+        height: 2px;
+        margin: 17px 1481px 20px 160px;
+        margin-top: 25px;
+        border-radius: 1px;
+        background-color: white;
+      }
+.container p{
+    width: 133px;
+    height: 26px;
+    margin: 20px 124px 534px 161px;
+    font-family: 'Pretendard-Regular';
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.68px;
+    text-align: left;
+    color: white
+  }
+
+    
