@@ -1,4 +1,4 @@
-*{margin:0;padding:0;box-sizing: border-box;}
+*{margin:0;padding:0;box-sizing: border-box;font-family: "Pretendard-Regular";}
 a{text-decoration: none;}
 header{
     position:absolute;
@@ -7,8 +7,9 @@ header{
     background-color: 
     #ffffff;
 }
-header .container{
+header .container h1{
     width:168px;
     height:49px;
+    background-image: url("/images/reservation/logo-2.png");
     
 }
