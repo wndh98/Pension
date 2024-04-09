@@ -1,0 +1,14 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+a{text-decoration: none;}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: 
+    #ffffff;
+}
+header .container{
+    width:168px;
+    height:49px;
+    
+}
