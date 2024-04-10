@@ -1,5 +1,8 @@
-*{margin:0;padding:0;box-sizing: border-box;font-family: "Pretendard-Regular";}
+*{margin:0;padding:0;box-sizing: border-box;font-family: "Pretendard-Regular";color:#323232}
 a{text-decoration: none;}
+
+.wrap{width:1920px;position:relative;margin:auto;}
+/* 메뉴 */
 header{
     width:100%;
     position:absolute;
@@ -7,26 +10,181 @@ header{
     left:0;
     background-color: 
     #ffffff;
-}
-header .container{
     height:120px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: 0.5s;
+    z-index:100;
 }
-header .container h1{
-    position:absolute;
-    width:200px;
-    height:43px;
-    background-image: url("/images/reservation/logo-2.png");
-    top: 50px;
-    left: 159px; 
+/* 메뉴에 마우스 호버시 */
+header:has(.container .menu li:hover){
+    height:197px;
 }
 
-header .container ul{
+header nav{border-bottom: 1px solid #e0e0e0;}
+
+header .container{
+    height:120px;
+    width:1600px;
+    margin:auto;
+    /* padding-top:50px; */
+    display:flex;
+    justify-content: space-between;
+    
+}
+header .container h1{
+    flex:30%;
+    padding-top:40px;
+    
+}
+
+
+header .container .allMenu{
+    flex:70%;
+}
+
+header .container .allMenu > ul{
     padding-right:190px;
     display:flex;
     justify-content: end;
-    height:100%;
-    padding-top:70px;
     font-size:18px;
     list-style-type:none;
     font-weight: bold;
+}
+
+header .container .menu > li{
+    position:relative;
+}
+
+header .container .menu > li > a{
+    padding:0 37px;
+    display:block;
+    line-height:6.69;
+}
+
+/* 메뉴 호버시 선 */
+header .container .menu > li:hover::after{
+    border-bottom:1px solid #ff0048;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+}
+/* 각 메뉴 호버시 after에 컨텐트 추가 */
+header .container .menu #menu01:hover::after{
+    content:'';
+}
+header .container .menu #menu02:hover::after{
+    content:'';
+}
+header .container .menu #menu03:hover::after{
+    content:'';
+}
+header .container .menu #menu04:hover::after{
+    content:'';
+}
+header .container .menu #menu05:hover::after{
+    content:'';
+}
+
+
+
+/* 하단 메뉴 */
+header .subMenu{
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+/* 객실/시설 호버시 이부분 복사 */
+header .container .menu #menu01:hover #subMenu01{
+    height:auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+header .subMenu{
+    position:absolute;
+    left:-200%;
+    top:125px;
+    width:400px;
+}
+
+header .subMenu ul{
+    display:flex;
+    list-style-type:none;
+    gap:20px;
+    justify-content: space-between;
+    
+}
+header .subMenu ul li a{
+    display:block;
+    line-height: 4;
+    
+}
+/* 하단메뉴 끝 */
+
+/* 메뉴스타일 끝 */
+
+
+.reservationCon .container{
+    padding-top:300px;
+    width:1600px;
+    margin:auto;
+
+}
+.reservationCon .container .title h1{
+    margin-left: 20px;
+    font-style:bold;
+    position:relative;
+}
+.reservationCon .container .title h1::before{
+    content:'';
+    border:6px solid #ff0048;
+    position:absolute;
+    height:15px;
+    left:-20px;
+    
+}
+
+.reservationCon .container .title p{
+    margin-top: 10px;
+}
+
+.reservationCon .container hr{
+    position:absolute;
+    width:100%;
+    left: 0;
+    top:390px;
+    border-width: 2px;;
+}
+
+.reservationCon .container .mainContent{
+    margin:auto;
+    margin-top:150px;
+    width:720px;
+    text-align:center;
+
+}
+.mainContent .payImgBox{
+    display:flex;
+    justify-content: space-between;
+}
+.mainContent p{
+    margin-top:50px;
+    font-weight: 500;
+}
+
+.mainContent p::before{
+    content:'*';
+    color:#ff0048;
+}
+.mainContent a{
+    display:block;
+    font-size:20px;
+    font-weight: bold;
+    margin:auto;
+    margin-top:50px;
+    width:303px;
+    line-height: 4;
+    border:1px solid #e0e0e0;
 }
