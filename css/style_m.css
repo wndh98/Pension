@@ -2,8 +2,10 @@
     padding: 0px;
     margin: 0px;
 }
-.wrap{width:1920px;position:relative;margin:auto;}
-
+.wrap{min-height:100vh;}
+@media screen and (min-height:1080px) {
+    .wrap{max-height:1080px;}
+}
 body {
     background-image: url(../images/main/main-img.png);
     background-repeat: no-repeat;
@@ -50,28 +52,58 @@ height: 420px;
 
 } */
 
+
+section {
+    min-height: 100vh;
+    background-image: url(../images/main/main-img.png);
+    background-repeat: no-repeat;
+    /*백그라운드 이미지 반복 멈추는 것*/
+    
+    overflow: hidden;
+    /* 요소의 스크롤을 숨깁니다. */
+}
+
+@media screen and (min-height: 1080px) {section {height: 1080px;} }
+
+
+
 /*메인 슬로건 시작*/
-.text1{color: white; margin: 0 auto; /*margin: 90px 0px 0px 0px;*/
+.text1 {
+    color: white;
+    margin: 0 auto;
+    /*margin: 90px 0px 0px 0px;*/
     position: absolute;
     left: 50%;
-    top:50%;
+    top: 50%;
     width: 770px;
     height: 140px;
     margin-left: -385px;
     margin-top: -70px;
 }
 
-.text1_1{font-weight: bold; font-size: 48px; margin-bottom: 18px; }
+.text1_1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 18px;
+}
 
-.text2{text-align: center; font-size: 20px;}
+.text2 {
+    text-align: center;
+    font-size: 20px;
+}
+
 /*메인 슬로건 끝*/
 
 
 
 /*푸터 시작*/
-footer{position: absolute; 
+footer {
+    position: absolute;
+    min-width: 1080px;
+   bottom: 60px;
+    left: 60px;
 
-/* position:stroke; : 문서 흐름에 따라 배치됩니다. 
+    /* position:stroke; : 문서 흐름에 따라 배치됩니다. 
     일반적으로 position 속성을 명시적으로 지정하지 않은 경우에는 static 값이 적용됩니다
     
 position: relative: 요소를 일반적인 문서 흐름에 따라 배치하되, 자신을 기준으로 위치를 
@@ -81,22 +113,24 @@ position: absolute: 요소를 문서 흐름에서 제거하고, 부모 요소 �
 fixed: 요소를 뷰포트(viewport)의 상대적인 위치에 고정시킵니다. 스크롤해도 요소는 화면에 고정됩니다.
 
 sticky: 요소를 일반적인 문서 흐름에 따라 배치하되, 특정 위치까지 스크롤될 때 화면에 고정시킬 수 있습니다.*/
-    bottom: 60px;
-    left: 60px;
-}
+ }
 
-footer{
+
+footer {
     color: #fff;
-    
 
 }
 
-footer h2{font-size: 24px; font-weight: bold; margin-bottom: 14px;
-    /*padding: 10px; */}
+
+footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 14px;
+   
+}
 
 
 
-footer .b{font-size: 16px; margin-top: 24px; }
 
 /*첫 번째 값은 위(margin-top)의 마진을 나타냅니다.
 두 번째 값은 오른쪽(margin-right)의 마진을 나타냅니다.
