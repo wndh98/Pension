@@ -2,15 +2,19 @@
     padding: 0px;
     margin: 0px;
 }
-
-.wrap {
-    width: 1920px;
-    position: relative;
-    margin: auto;
-
-    /* min-height: 1080px; */
+.wrap{min-height:100vh;}
+@media screen and (min-height:1080px) {
+    .wrap{max-height:1080px;}
 }
+body {
+    background-image: url(../images/main/main-img.png);
+    background-repeat: no-repeat;
+    /*백그라운드 이미지 반복 멈추는 것*/
 
+    overflow: hidden; /* 요소의 스크롤을 숨깁니다. */
+
+
+}
 
 /* .main {
     padding: 10px;
