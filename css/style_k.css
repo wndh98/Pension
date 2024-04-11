@@ -68,7 +68,7 @@ a{text-decoration: none;}
 }
 
 /* 메뉴 */
-header{
+#menuHeader{
     width:100%;
     position:absolute;
     top:0;
@@ -81,7 +81,7 @@ header{
     z-index:100;
 }
 /* 메뉴에 마우스 호버시 */
-header:has(.container .menu li:hover){
+#menuHeader:has(.container .menu li:hover){
     height:197px;
 }
 
