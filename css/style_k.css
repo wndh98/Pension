@@ -187,7 +187,7 @@ input[type="text"],input[type="password"]{
     z-index:100;
 }
 /* 메뉴에 마우스 호버시 */
-header:has(.container .menu li:hover){
+#menuHeader:has(.container .menu li:not(#menu02,#menu03,#menu04,#menu05):hover){
     height:197px;
 }
 
@@ -378,7 +378,7 @@ header:has(.container .menu li:hover){
 }
 .joinform form{
     flex:1;
-    
+    margin-top:300px;
 }
 
 .joinform h1{
