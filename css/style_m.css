@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
 }
-
+.wrap{width:1920px;position:relative;margin:auto;}
 
 body {
     background-image: url(../images/main/main-img.png);
