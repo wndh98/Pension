@@ -47,7 +47,7 @@ a{text-decoration: none;}
     padding: 0 20px;
 }
 
-.modal .container input[type="text"]{
+input[type="text"],input[type="password"]{
     background-color: transparent;
     border: none !important;
     font-size: 16px !important;
@@ -59,16 +59,24 @@ a{text-decoration: none;}
 .modal .container .register{
     display:flex;
     justify-content: space-between;
+    font-size:16px;
 }
 .modal .container .register div{
     flex:50%;
+    line-height: 3;
+    font-size:12px;
 }
 .modal .container .register a{
+    text-align:right;
     flex:50%;
+    color: #999;
+    text-decoration: underline;
+    line-height: 3;
+    
 }
 
 /* 메뉴 */
-header{
+#Header{
     width:100%;
     position:absolute;
     top:0;
@@ -81,7 +89,7 @@ header{
     z-index:100;
 }
 /* 메뉴에 마우스 호버시 */
-header:has(.container .menu li:hover){
+#Header:has(.container .menu li:hover){
     height:197px;
 }
 
